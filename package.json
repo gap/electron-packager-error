@@ -1,0 +1,25 @@
+{
+  "name": "test-project",
+  "author": "Gary Pickrell <gap@eskimo.com>",
+  "description": "None",
+  "version": "0.1.0",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "homepage": "./",
+  "main": "public/electron.js",
+  "scripts": {
+    "build": "react-scripts build",
+    "clean": "rm -Rf test-project-linux-x64 && rm -Rf build",
+    "electron": "electron .",
+    "package": "DEBUG=electron-packager electron-packager . --platform=linux --arch=x64",
+    "exe": "./test-project-linux-x64/test-project"
+  },
+  "devDependencies": {
+    "electron": "^1.8.2",
+    "electron-builder": "^20.0.5"
+  }
+}
